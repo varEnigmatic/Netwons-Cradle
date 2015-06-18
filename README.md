@@ -1,2 +1,4 @@
 # Netwons-Cradle
-Newton's Cradle built with Swift and UIKit dynamics
+Newton's Cradle built with Swift and UIKit dynamics.
+
+![](Newtons-Cradle.gif)

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Yc3-MD-7iR">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="I2H-WS-gao">
+            <objects>
+                <viewController id="Yc3-MD-7iR" customClass="ViewController" customModule="Newton_s_Cradle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qNw-hM-LgY"/>
+                        <viewControllerLayoutGuide type="bottom" id="jtx-aZ-35d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nhR-Ya-hrc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjW-hL-ot0">
+                                <rect key="frame" x="279" y="282" width="43" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="start:" destination="Yc3-MD-7iR" eventType="touchUpInside" id="jDH-Ur-6GI"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ras-Xb-qKn">
+                                <rect key="frame" x="478" y="556" width="102" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Apply force"/>
+                                <connections>
+                                    <action selector="applyForce" destination="Yc3-MD-7iR" eventType="touchUpInside" id="jkt-Jw-cij"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bjW-hL-ot0" firstAttribute="centerX" secondItem="nhR-Ya-hrc" secondAttribute="centerX" id="51f-qC-mq5"/>
+                            <constraint firstItem="bjW-hL-ot0" firstAttribute="centerY" secondItem="nhR-Ya-hrc" secondAttribute="centerY" id="Lvc-NM-Wcj"/>
+                            <constraint firstItem="jtx-aZ-35d" firstAttribute="top" secondItem="ras-Xb-qKn" secondAttribute="bottom" constant="8" id="MKY-Me-gFE"/>
+                            <constraint firstItem="ras-Xb-qKn" firstAttribute="trailing" secondItem="nhR-Ya-hrc" secondAttribute="trailingMargin" id="aHl-c6-UMI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="forceButton" destination="ras-Xb-qKn" id="b5P-N9-dJf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Sh-Yt-lOf" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="433" y="374"/>
+        </scene>
+    </scenes>
+</document>
